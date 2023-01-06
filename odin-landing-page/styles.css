@@ -4,23 +4,56 @@
     --hero-secondary-txt-color: #e5e7eb;
     --btn-color: #3882f6;
     --dark-txt-color: #1f2937;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: #efefef;
+    margin: 0 5em 0 5em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex:1;
+    margin: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     background-color: var(--dark-bg-color);
+    min-height: 50px;
+}
+
+footer{
+    background-color: var(--dark-bg-color);
+    color: var(--hero-secondary-txt-color);
+    min-height: 50px;
+    flex: 1;
 }
 
 .hero {
     display: flex;
     background-color: var(--dark-bg-color);
+    color: var(--hero-main-txt-color);
 }
 
-.hero div {
+.info {
+    display: flex;
+    flex-direction: column;
 
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex: 1;
+}
+.quote {
+}
+
+.cta {
 }
