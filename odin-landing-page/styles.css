@@ -1,0 +1,26 @@
+:root {
+    --dark-bg-color: #1f2937;
+    --hero-main-txt-color: #f9faf8;
+    --hero-secondary-txt-color: #e5e7eb;
+    --btn-color: #3882f6;
+    --dark-txt-color: #1f2937;
+}
+
+body {
+    background-color: #efefef;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-bg-color);
+}
+
+.hero {
+    display: flex;
+    background-color: var(--dark-bg-color);
+}
+
+.hero div {
+
+}
