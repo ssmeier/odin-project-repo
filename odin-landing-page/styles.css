@@ -9,10 +9,21 @@
 
 body {
     background-color: #efefef;
-    margin: 0 5em 0 5em;
+    margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: .10;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
 }
 
 main {
@@ -25,6 +36,14 @@ header {
     justify-content: space-between;
     background-color: var(--dark-bg-color);
     min-height: 50px;
+    color: var(--hero-secondary-txt-color);
+    padding: 0 10% 1%;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--hero-main-txt-color);
+    font-size: 24px;
 }
 
 footer{
@@ -36,8 +55,41 @@ footer{
 
 .hero {
     display: flex;
+    justify-content: left;
     background-color: var(--dark-bg-color);
     color: var(--hero-main-txt-color);
+    padding: 0% 10%;
+}
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 5% 0;
+}
+
+#hero-text h1 {
+    color: var(--hero-main-txt-color);
+    font-size: 48px;
+    font-style: bold;
+}
+
+#hero-text p {
+    font-size: 18px;
+    color: var(--hero-secondary-txt-color);
+}
+
+.hero button {
+    color: var(--hero-secondary-txt-color);
+    background-color: var(--btn-color);
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    font-style: bold;
+}
+
+#hero-image {
+    display: flex;
+    padding: 5%;
 }
 
 .info {
